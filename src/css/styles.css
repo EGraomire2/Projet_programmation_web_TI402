@@ -1,0 +1,36 @@
+header {
+    margin: 5px;
+    background-color: rgb(230, 242, 226);
+    color: green;
+    padding: 10px 0;
+    text-align: center;
+}
+
+body {
+    margin: 5px;
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+a:hover {
+    color: green;
+}
