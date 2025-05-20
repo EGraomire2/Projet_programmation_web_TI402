@@ -89,6 +89,7 @@ p {
 
 /* Styles communs pour tableaux d'urgence */
 .data-section {
+    display: none; /* Par défaut les sections sont invisibles et peuvent être affichées via des boutons JavaScript */
     margin: 30px 0;
     padding: 20px;
     background-color: #ffe5e0;
