@@ -8,12 +8,12 @@ header, footer {
 
 body {
     margin: 5px;
-    background-color: rgb(232, 255, 232);
+    background-color: rgb(250, 255, 250);
 }
 
 main {
     padding: 15px;
-    margin: 0 10% 0 10%;
+    margin: 15px 15% 15px 15%;
     background-color: rgb(255, 255, 225);
     border-radius: 5px;
     border: 1px solid green;
@@ -44,6 +44,23 @@ a:hover {
     color: green;
 }
 
+h1{
+    color: rgb(0, 100, 0);
+    font-size: 36px;
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 140, 0);
+    font-size: 28px;
+    text-align: center;
+}
+
+h3{
+    color: rgb(0, 180, 0);
+    font-size: 24px;
+}
+
 section.founder{
     display: flex;
     flex-direction: row;
@@ -70,34 +87,41 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Style pour le tableau d'urgence climatique */
-.urgency-section {
+/* Styles communs pour tableaux d'urgence */
+.data-section {
     margin: 30px 0;
     padding: 20px;
     background-color: #ffe5e0;
     border: 2px solid #ff4d4d;
     border-radius: 5px;
 }
-.urgency-section h2 {
+.data-section h2 {
     color: #cc0000;
     text-align: center;
     margin-bottom: 15px;
 }
-.urgency-table {
+.data-table {
     width: 100%;
     border-collapse: collapse;
     text-align: center;
     font-size: 18px;
+    margin: 0 auto;
 }
-.urgency-table th,
-.urgency-table td {
+.data-table th,
+.data-table td {
     border: 1px solid #ff7f7f;
     padding: 10px;
 }
-.urgency-table th {
+.data-table th {
     background-color: #ffcccc;
     color: #990000;
 }
-.urgency-table tr:nth-child(even) {
+.data-table tr:nth-child(even) {
     background-color: #fff2f0;
+}
+.data-section p {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #cc0000;
 }
