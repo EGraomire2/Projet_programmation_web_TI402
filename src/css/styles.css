@@ -87,6 +87,18 @@ p {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Styles pour le conteneur des boutons */
+div#button-square {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    max-width: 300px;
+    max-height: 300px;
+    background-color: aliceblue;
+    
+}
+
 /* Styles communs pour tableaux d'urgence */
 .data-section {
     display: none; /* Par défaut les sections sont invisibles et peuvent être affichées via des boutons JavaScript */
@@ -125,4 +137,9 @@ p {
     margin-top: 15px;
     font-weight: bold;
     color: #cc0000;
+}
+
+.selected-button {
+    background-color: #4CAF50; /* Vert */
+    color: white;
 }

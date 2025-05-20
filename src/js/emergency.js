@@ -4,47 +4,57 @@ window.onload=function() {
     button3 = document.getElementById("button3");
     button4 = document.getElementById("button4");
 
+    emergency1 = document.getElementById("emergency1");
+    emergency2 = document.getElementById("emergency2");
+    emergency3 = document.getElementById("emergency3");
+    emergency4 = document.getElementById("emergency4");
+
+
     button1.addEventListener("click", function() {
-        button1.style.backgroundColor = "green";
-        button1.style.color = "white";
-        button1.innerHTML = "Clicked!";
-        setTimeout(function() {
-            button1.style.backgroundColor = "";
-            button1.style.color = "";
-            button1.innerHTML = "Button 1";
-        }, 2000);
+        emergency1.style.display = "block";
+        emergency2.style.display = "none";
+        emergency3.style.display = "none";
+        emergency4.style.display = "none";
+
+        button1.classList.add("selected-button");
+        button2.classList.remove("selected-button");
+        button3.classList.remove("selected-button");
+        button4.classList.remove("selected-button");
     });
 
     button2.addEventListener("click", function() {
-        button2.style.backgroundColor = "green";
-        button2.style.color = "white";
-        button2.innerHTML = "Clicked!";
-        setTimeout(function() {
-            button2.style.backgroundColor = "";
-            button2.style.color = "";
-            button2.innerHTML = "Button 2";
-        }, 2000);
+        emergency1.style.display = "none";
+        emergency2.style.display = "block";
+        emergency3.style.display = "none";
+        emergency4.style.display = "none";
+
+        button1.classList.remove("selected-button");
+        button2.classList.add("selected-button");
+        button3.classList.remove("selected-button");
+        button4.classList.remove("selected-button");
     });
 
     button3.addEventListener("click", function() {
-        button3.style.backgroundColor = "green";
-        button3.style.color = "white";
-        button3.innerHTML = "Clicked!";
-        setTimeout(function() {
-            button3.style.backgroundColor = "";
-            button3.style.color = "";
-            button3.innerHTML = "Button 3";
-        }, 2000);
+        emergency1.style.display = "none";
+        emergency2.style.display = "none";
+        emergency3.style.display = "block";
+        emergency4.style.display = "none";
+
+        button1.classList.remove("selected-button");
+        button2.classList.remove("selected-button");
+        button3.classList.add("selected-button");
+        button4.classList.remove("selected-button");
     });
 
     button4.addEventListener("click", function() {
-        button4.style.backgroundColor = "green";
-        button4.style.color = "white";
-        button4.innerHTML = "Clicked!";
-        setTimeout(function() {
-            button4.style.backgroundColor = "";
-            button4.style.color = "";
-            button4.innerHTML = "Button 4";
-        }, 2000);
+        emergency1.style.display = "none";
+        emergency2.style.display = "none";
+        emergency3.style.display = "none";
+        emergency4.style.display = "block";
+
+        button1.classList.remove("selected-button");
+        button2.classList.remove("selected-button");
+        button3.classList.remove("selected-button");
+        button4.classList.add("selected-button");
     });
 }
