@@ -1,4 +1,4 @@
-header {
+header, footer {
     margin: 5px;
     background-color: rgb(230, 242, 226);
     color: green;
@@ -8,6 +8,15 @@ header {
 
 body {
     margin: 5px;
+    background-color: rgb(232, 255, 232);
+}
+
+main {
+    padding: 15px;
+    margin: 0 10% 0 10%;
+    background-color: rgb(255, 255, 225);
+    border-radius: 5px;
+    border: 1px solid green;
 }
 
 nav {
@@ -33,4 +42,62 @@ nav a {
 
 a:hover {
     color: green;
+}
+
+section.founder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.founder-text {
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+.founder-photo {
+    flex-shrink: 0;      /* Empêche l’image de se rétrécir */
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 120px;
+    height: 120px; /* Hauteur = largeur pour un cercle parfait */
+    object-fit: cover; /* Assure que l'image garde une bonne apparence sans déformation */
+    border-radius: 50%; /* Crée une forme ronde */
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style pour le tableau d'urgence climatique */
+.urgency-section {
+    margin: 30px 0;
+    padding: 20px;
+    background-color: #ffe5e0;
+    border: 2px solid #ff4d4d;
+    border-radius: 5px;
+}
+.urgency-section h2 {
+    color: #cc0000;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.urgency-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+}
+.urgency-table th,
+.urgency-table td {
+    border: 1px solid #ff7f7f;
+    padding: 10px;
+}
+.urgency-table th {
+    background-color: #ffcccc;
+    color: #990000;
+}
+.urgency-table tr:nth-child(even) {
+    background-color: #fff2f0;
 }
