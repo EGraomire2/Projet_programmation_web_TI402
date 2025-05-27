@@ -51,29 +51,27 @@ div.main-content {
 }
 
 nav ul {
-    background-color: #F1F7F7;
+    background-color: #aacbc464; /* blanc très transparent */
     border-radius: 40px;
     padding: 20px 40px;
-    width:70%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
-    margin: 0px 50px 10px 50px;
     margin: 10px auto;
 
-    /* Effet flou / bouquet */
+    /* Effet bouquet (glassmorphism) */
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* pour Safari */
-
-    /* Ombre douce dans les tons blancs */
-    box-shadow: 0 8px 20px rgba(200, 230, 230, 0.4);
+    -webkit-backdrop-filter: blur(10px); /* Pour Safari */   
+    
 }
+
 
 nav ul li {
     display: inline;
 }
 
 nav a {
-    color: #17876E;
+    color: #97c6bc;
     font-weight: bold;
     font-size: 26px;
 }
