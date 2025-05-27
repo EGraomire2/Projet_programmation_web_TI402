@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Accueil - GreenPlaneTech</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>GreenPlaneTech</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="emergency.html">L'urgence climatique</a></li>
+                <li><a href="contact.html">Contactes</a></li>
+                <li><a href="about.html">À propos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <section id="contact-section">
+                <h2>Contactez-nous</h2>
+                <p>Pour toute question, suggestion ou collaboration, n'hésitez pas à nous écrire. Nous sommes là pour vous aider et échanger sur les innovations écotechnologiques.</p>
+
+                <p>Vous pouvez nous contacter par email à l'adresse suivante : <a href="mailto:contact@greenplanetech.com">contact@greenplanetech.com</a></p>
+                <p>Ou par téléphone au : <a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+            </section>
+            <section class="form-section">
+                <form id="contact-form">
+                    <h2>Abonnez-vous à notre newsletter</h2>
+
+                    <div class="form-element">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="first-name">Prénom :</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-element">                
+                        <label for="birthdate">Date de naissance :</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+
+                    <div class="form-element">
+                        <label for="checkbox">Quelles innovations vous intéressent ?</label><br>
+                        <input type="checkbox" id="solar-film" name="solar-film" value="solar-film">
+                        <label for="solar-film">La ferme verticale</label><br>
+
+                        <input type="checkbox" id="biorecyclage" name="biorecyclage" value="biorecyclage">
+                        <label for="biorecyclage">Biorécyclage enzymatique</label><br>
+
+                        <input type="checkbox" id="farm" name="farm" value="farm">
+                        <label for="farm">La ferme verticale</label><br>
+                    </div>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Vous souhaitez en apprendre plus sur nous ? <a href="about.html">Cliquez ici</a></p>
+        <p>&copy; 2025 GreenPlaneTech - Sauvons notre planète !</p>
+    </footer>
+</body>
+</html>

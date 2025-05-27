@@ -1,43 +1,85 @@
 header, footer {
-    margin: 5px;
-    background-color: rgb(230, 242, 226);
+    margin: 0;
     color: green;
-    padding: 10px 0;
     text-align: center;
 }
 
+header h1{
+    color:#00DF82;
+    background-color: #06302C;
+    padding: 50px;
+    margin-top: -20px;
+    margin-bottom: -30px;
+}
+
+#main-header {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;  
+    margin-top: -200px;
+}
+
+#main-header.scrolled {
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;  
+}
+
+#main-header.scrolled h1{
+    display: none;
+    transition: all 0.4 ease;
+}
+
+
 body {
-    margin: 5px;
-    background-color: rgb(250, 255, 250);
+    margin: 0;
+    color:#AACBC4;
+    background-color: #030F0F;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
     padding: 15px;
-    margin: 15px 15% 15px 15%;
-    background-color: rgb(255, 255, 225);
+    margin: 15px 10% 15px 10%;
     border-radius: 5px;
-    border: 1px solid green;
+    margin-top: 200px;
 }
 
-nav {
-    margin: 20px 0;
+div.main-content {
+    margin : 10px 45px 10px 45px; 
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    background-color: #F1F7F7;
+    border-radius: 40px;
+    padding: 20px 40px;
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px 10px 50px;
+    margin: 10px auto;
+
+    /* Effet flou / bouquet */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* pour Safari */
+
+    /* Ombre douce dans les tons blancs */
+    box-shadow: 0 8px 20px rgba(200, 230, 230, 0.4);
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #4CAF50;
+    color: #17876E;
     font-weight: bold;
     font-size: 26px;
+}
+
+a {
+    text-decoration: none;
 }
 
 a:hover {
@@ -51,13 +93,13 @@ h1{
 }
 
 h2{
-    color: rgb(0, 140, 0);
+    color: #2EC297;
     font-size: 28px;
     text-align: center;
 }
 
 h3{
-    color: rgb(0, 180, 0);
+    color: #2CC295;
     font-size: 24px;
 }
 
@@ -99,16 +141,25 @@ div#button-square {
     
 }
 
-/* Styles communs pour tableaux d'urgence */
-.data-section {
-    display: none; /* Par défaut les sections sont invisibles et peuvent être affichées via des boutons JavaScript */
+/***************** Styles communs pour tableaux d'urgence et sections de mise en avant **********************/
+.selected-button{
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid green;
+}
+
+.data-section{
+    display: none; /* Masquer par défaut */
+}
+
+.data-section, .form-section {
     margin: 30px 0;
     padding: 20px;
     background-color: #ffe5e0;
     border: 2px solid #ff4d4d;
     border-radius: 5px;
 }
-.data-section h2 {
+.data-section h2, .form-section h2 {
     color: #cc0000;
     text-align: center;
     margin-bottom: 15px;
@@ -139,7 +190,44 @@ div#button-square {
     color: #cc0000;
 }
 
-.selected-button {
-    background-color: #4CAF50; /* Vert */
-    color: white;
+/****************** Styles pour le formulaire de la newsletter **********************/
+.form-section label {
+    margin: 0px 0 0px;
+    color: #990000;
+    font-weight: bold;
+    font-size: 16px;
 }
+
+.form-element {
+    margin-bottom: 15px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="date"] {
+    width: 100%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: 1px solid #ff7f7f;
+    border-radius: 3px;
+    font-size: 20px;
+    background-color: #fff2f0;
+}
+.form-section button[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    background-color: #cc0000;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-section button[type="submit"]:hover {
+    background-color: #990000;
+}
+
+
+
+
