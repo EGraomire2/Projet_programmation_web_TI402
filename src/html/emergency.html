@@ -6,18 +6,28 @@
     <title>Accueil - GreenPlaneTech</title>
     <link rel="stylesheet" href="../css/styles.css">
     <script src="../js/emergency.js"></script>
+    <script src="../js/header.js"></script>
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <h1>GreenPlaneTech</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="emergency.html">L'urgence climatique</a></li>    
-                <li><a href="contact.html">Contacts</a></li>            
-                <li><a href="about.html">À propos</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <h2 id="header-logo">GPT</h2>
+            
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="emergency.html">L'urgence climatique</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                </ul>
+            </nav>
+            
+            <label class="burger-menu">
+                <input type="checkbox">
+            </label>
+
+        </div>
     </header>
 
     <main>
