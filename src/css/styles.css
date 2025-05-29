@@ -9,9 +9,7 @@ header h1{
     color:#00DF82;
 }
 
-#main-header {
-    background-color: #aacbc464; 
-    backdrop-filter: blur(10px);  
+#main-header { 
     transition: transform 0.4s ease;
     position: fixed;
     width: 100%;
@@ -21,8 +19,13 @@ header h1{
 }
 
 #main-header.scrolled {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transform: translateY(-90px);
+}
+
+#header-title-nav {
+    padding-top: 10px;
+    background-color: #aacbc464; 
+    backdrop-filter: blur(10px); 
 }
 
 body {
@@ -73,6 +76,7 @@ div.main-content {
     --bar-height: 4px;
     --hamburger-gap: 6px;
     --forground: #97c6bc;
+    --animation-timing: 0.2s ease-in-out;
 }
 
 .burger-menu::before,
@@ -82,21 +86,58 @@ div.main-content {
     width: var(--bar-width);
     height: var(--bar-height);
     background-color: var(--forground);
+    transform-origin: right center;
+    transition: all var(--animation-timing), width var(--animation-timing);
 }
 
 .burger-menu {
     display: flex;
     flex-direction: column;
     gap: var(--hamburger-gap);
-    outline: none;
-    pointer-events: none;
+    width: max-content;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+.burger-menu:has(input:checked)::before { /*selectionne burger-menu s'il a un input checked*/
+    rotate: -40deg;
+}
+
+.burger-menu:has(input:checked)::after { /*selectionne burger-menu s'il a un input checked*/
+    rotate: 40deg;
 }
 
 .burger-menu input {
     appearance: none;
     padding: 0;
     margin:0;
+    outline: none;
+    pointer-events: none;
 }
+
+.burger-menu input:checked {
+    opacity: 0;
+}
+
+.sidebar {
+    text-align: left;
+    list-style: none;
+    flex-direction: column;
+    transition: transform 0.5s ease;
+    transform: translateX(2000px);
+}
+
+.sidebar nav li {
+    margin: 30px;
+}
+
+.sidebar.show {
+    transform: translateX(1000px);
+}
+
+
+
 
 /* =================== */
 
@@ -136,8 +177,6 @@ nav ul {
     padding: 0;
     
 }
-
-
 
 
 nav a {

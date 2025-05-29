@@ -8,3 +8,17 @@ window.addEventListener('scroll', function() {
         header.classList.remove('scrolled');
     }
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+const burger = document.querySelector('.burger-menu input');
+const sidebar = document.querySelector('.sidebar');
+
+burger.addEventListener('change', () => {
+    if (burger.checked) {
+    sidebar.classList.add('show');
+    } else {
+    sidebar.classList.remove('show');
+    }
+});
+});
