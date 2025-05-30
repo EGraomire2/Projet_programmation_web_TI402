@@ -10,34 +10,71 @@
 </head>
 <body>
     <header id="main-header">
-        <h1>GreenPlaneTech</h1>
-        <div class="nav-container">
-            <h2 id="header-logo">GPT</h2>
-            
-            <nav>
-                <ul>
+        <div id="header-title-nav">
+            <h1>GreenPlaneTech</h1>
+            <div class="nav-container">
+                <h2 id="header-logo">GPT</h2>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html" class="active">Accueil</a></li>
+                        <li><a href="emergency.html">L'urgence climatique</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                    </ul>
+                </nav>
+                
+                <label class="burger-menu">
+                    <input type="checkbox">
+                </label>
+            </div>
+
+        </div>
+            <aside class="sidebar">
+                <nav>
                     <li><a href="index.html" class="active">Accueil</a></li>
                     <li><a href="emergency.html">L'urgence climatique</a></li>
                     <li><a href="contact.html">Contacts</a></li>
                     <li><a href="about.html">À propos</a></li>
-                </ul>
-            </nav>
-            
-            <label class="burger-menu">
-                <input type="checkbox">
-            </label>
-
-        </div>
+                </nav>
+            </aside>
     </header>
 
     <main>
-        <div class="main-content">
-            <div id="button-square">
-                <button id="button1">Urgence Climatique</button>
-                <button id="button2">Niveau de la mer</button>
-                <button id="button3">Acidification des océans</button>
-                <button id="button4">Déforestation</button>
+        <h2>Nos Innovations au service de la planète</h2>
+        <div class="innovation-cards">
+            <div id="first-block">
+                <div class="innovation-item">
+                    <img src="../images/film-solaire.jpg" alt="Films solaires organiques" class="innovation-photo">
+                    <h3>Films solaires organiques</h3>
+                    <p>Des panneaux photovoltaïques ultralégers et flexibles, imprimés sur des substrats fins, qui captent la lumière même dans des conditions de faible ensoleillement. Idéaux pour les façades, toitures et objets du quotidien. Ces films réduisent l'empreinte carbone de la production solaire et offrent une intégration esthétique, tout en conservant un rendement énergétique de l'ordre de 10–15 %.</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+                <div class="innovation-item">
+                    <img src="../images/biorecyclage.png" alt="Biorécyclage enzymatique" class="innovation-photo">
+                    <h3>Biorécyclage enzymatique</h3>
+                    <p>Une technologie révolutionnaire qui utilise des enzymes spécifiques pour décomposer le PET et autres plastiques résistants en leurs monomères d'origine. Le procédé, à faible température, consomme moins d'énergie que le recyclage chimique classique et permet de boucler la filière du plastique de façon véritablement circulaire.</p>
+                    <a href="#">En savoir plus</a>
+                </div>
             </div>
+            <div id="seccond-block">
+                <div class="innovation-item">
+                    <img src="../images/ferme-verticale.jpeg" alt="Ferme verticale hydroponique" class="innovation-photo">
+                    <h3>Ferme verticale hydroponique</h3>
+                    <p>Des systèmes agricoles empilés qui cultivent fruits et légumes en intérieur, sans sol, avec une utilisation optimisée de l'eau et des nutriments. Ces fermes urbaines réduisent les distances de transport, consomment jusqu'à 90 % d'eau en moins et génèrent des rendements multipliés par 10 par rapport à l'agriculture traditionnelle.</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="button-square">
+            <button type="button" id="button1">Urgence Climatique</button>
+            <button type="button" id="button2">Niveau de la mer</button>
+            <button type="button" id="button3">Acidification des océans</button>
+            <button type="button" id="button4">Déforestation</button>
+        </div>
+
+        <div class="main-content">
 
             <!-- Section 1 : Urgence climatique générale -->
             <section class="data-section" id="emergency1">
@@ -194,27 +231,6 @@
                 </table>
                 <p>La disparition rapide des forêts tropicales compromet la biodiversité et le stockage de carbone.</p>
             </section>
-        </div>
-        <h2>Nos Innovations au service de la planète</h2>
-        <div class="innovation-cards">
-            <div class="innovation-item">
-                <img src="../images/film-solaire.jpg" alt="Films solaires organiques" class="innovation-photo">
-                <h3>Films solaires organiques</h3>
-                <p>Des panneaux photovoltaïques ultralégers et flexibles, imprimés sur des substrats fins, qui captent la lumière même dans des conditions de faible ensoleillement. Idéaux pour les façades, toitures et objets du quotidien. Ces films réduisent l'empreinte carbone de la production solaire et offrent une intégration esthétique, tout en conservant un rendement énergétique de l'ordre de 10–15 %.</p>
-                <a href="#">En savoir plus</a>
-            </div>
-            <div class="innovation-item">
-                <img src="../images/biorecyclage.png" alt="Biorécyclage enzymatique" class="innovation-photo">
-                <h3>Biorécyclage enzymatique</h3>
-                <p>Une technologie révolutionnaire qui utilise des enzymes spécifiques pour décomposer le PET et autres plastiques résistants en leurs monomères d'origine. Le procédé, à faible température, consomme moins d'énergie que le recyclage chimique classique et permet de boucler la filière du plastique de façon véritablement circulaire.</p>
-                <a href="#">En savoir plus</a>
-            </div>
-            <div class="innovation-item">
-                <img src="../images/ferme-verticale.jpeg" alt="Ferme verticale hydroponique" class="innovation-photo">
-                <h3>Ferme verticale hydroponique</h3>
-                <p>Des systèmes agricoles empilés qui cultivent fruits et légumes en intérieur, sans sol, avec une utilisation optimisée de l'eau et des nutriments. Ces fermes urbaines réduisent les distances de transport, consomment jusqu'à 90 % d'eau en moins et génèrent des rendements multipliés par 10 par rapport à l'agriculture traditionnelle.</p>
-                <a href="#">En savoir plus</a>
-            </div>
         </div>
     </main>
 

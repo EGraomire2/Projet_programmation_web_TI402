@@ -16,6 +16,7 @@ header h1{
     text-align: center;
     margin: 0 auto;  
     margin-top: -200px;
+    z-index: 1000;
 }
 
 #main-header.scrolled {
@@ -97,6 +98,7 @@ div.main-content {
     width: max-content;
     z-index: 2;
     cursor: pointer;
+    width:3rem;
 }
 
 
@@ -222,96 +224,223 @@ div#button-square {
     max-width: 300px;
     max-height: 300px;
     background-color: aliceblue;
-    
+
 }
 
 /***************** Styles communs pour tableaux d'urgence et sections de mise en avant **********************/
-.selected-button{
-    background-color: #4CAF50;
-    color: white;
-    border: 1px solid green;
+.selected-button {
+    background-color: #2EC297;
+    color: #051c1f;
+    border: 1px solid #00DF82;
 }
 
-.data-section{
+.data-section {
     display: none; /* Masquer par défaut */
 }
 
 .data-section, .form-section {
     margin: 30px 0;
     padding: 20px;
-    background-color: #ffe5e0;
-    border: 2px solid #ff4d4d;
-    border-radius: 5px;
+    background-color: #07322a;       /* fond sombre */
+    border: 2px solid #00DF82;       /* vert vif */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 223, 130, 0.2);
+    color: #AACBC4;                   /* texte clair */
 }
+
 .data-section h2, .form-section h2 {
-    color: #cc0000;
+    color: #00DF82;                   /* titre vert vif */
     text-align: center;
     margin-bottom: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
+
+/* Style global des tableaux */
 .data-table {
     width: 100%;
-    border-collapse: collapse;
-    text-align: center;
-    font-size: 18px;
-    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem;
 }
-.data-table th,
-.data-table td {
-    border: 1px solid #ff7f7f;
-    padding: 10px;
+
+/* En-tête avec couleur d’accent */
+.data-table thead {
+    background: #2EC297;              /* vert moyen */
+    color: #051c1f;                   /* texte sombre */
 }
-.data-table th {
-    background-color: #ffcccc;
-    color: #990000;
+.data-table thead th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-bottom: 2px solid #00DF82; /* vert vif */
 }
-.data-table tr:nth-child(even) {
-    background-color: #fff2f0;
+
+/* Corps du tableau : lignes alternées */
+.data-table tbody tr:nth-child(odd) {
+    background: #e6f7f1;              /* très clair vert */
 }
+.data-table tbody tr:nth-child(even) {
+    background: #ffffff;
+}
+.data-table tbody td {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Suppression de la bordure sur la dernière ligne */
+.data-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Hover sur les lignes pour plus d’interactivité */
+.data-table tbody tr:hover {
+    background: rgba(46, 194, 151, 0.1);
+}
+
 .data-section p {
     text-align: center;
     margin-top: 15px;
     font-weight: bold;
-    color: #cc0000;
+    color: #00DF82;
 }
 
 /****************** Styles pour le formulaire de la newsletter **********************/
 .form-section label {
-    margin: 0px 0 0px;
-    color: #990000;
+    display: block;
+    margin-bottom: 6px;
+    color: #00DF82;                   /* vert vif */
     font-weight: bold;
     font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .form-element {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .form-section input[type="text"],
 .form-section input[type="email"],
 .form-section input[type="date"] {
     width: 100%;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    border: 1px solid #ff7f7f;
-    border-radius: 3px;
-    font-size: 20px;
-    background-color: #fff2f0;
+    padding: 10px;
+    border: 1px solid #2EC297;        /* vert moyen */
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: #0b352e;        /* fond sombre */
+    color: #AACBC4;                   /* texte clair */
+    font-family: 'Open Sans', sans-serif;
+    transition: border 0.3s ease;
 }
+
+.form-section input:focus {
+    border-color: #00DF82;            /* vert vif au focus */
+    outline: none;
+    background-color: #0f3f38;
+}
+
+/* Checkboxes */
+.form-section input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.1);
+    accent-color: #00DF82;
+}
+
+/* Bouton envoyer */
 .form-section button[type="submit"] {
     display: block;
-    margin: 20px auto 0;
-    padding: 12px 24px;
-    background-color: #cc0000;
-    color: white;
+    margin: 30px auto 0;
+    padding: 12px 28px;
+    background-color: #00DF82;        /* vert vif */
+    color: #051c1f;                   /* texte sombre */
     border: none;
-    border-radius: 3px;
+    border-radius: 6px;
     font-size: 16px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
+
 .form-section button[type="submit"]:hover {
-    background-color: #990000;
+    background-color: #2EC297;        /* vert moyen */
 }
 
 
+/************************STYLES POUR LES CARTES D'INNOVATION************************/
 
+.innovation-cards {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* ou la largeur souhaitée */
+  height: 600px;     /* à ajuster selon la hauteur de vos cartes */
+  margin: 0 auto;
+}
+
+/* Bloc du haut : deux items alignés aux extrémités */
+#first-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Bloc du bas : un item centré */
+#seccond-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Dimensions communes des cartes */
+.innovation-item {
+  width: 30%;       /* ajustez selon le rendu désiré */
+  max-width: 300px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Styles d’image et de texte à l’intérieur */
+.innovation-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.innovation-item h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+.innovation-item p {
+  padding: 0 0.5rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.innovation-item a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #0066cc;
+  text-decoration: none;
+}
+.innovation-item a:hover {
+  text-decoration: underline;
+}
 
