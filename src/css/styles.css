@@ -239,10 +239,12 @@ div.main-content {
     transform: translateY(-90px) translateX(0);
 }
 
-.sidebar nav {
+.sidebar nav ul{
     padding-top: 30px;
     display: flex;
     flex-direction: column;
+    text-align: left;
+    margin-left: -40px;
 }
 
 .sidebar nav li {
@@ -305,6 +307,7 @@ div.main-content {
 .overview img {
     width: 50%;
     height: 50%;
+    margin: auto;
 }
 
 .acceuil-bottom {
