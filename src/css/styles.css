@@ -436,7 +436,7 @@ div#button-square button:hover {
 }
 
 .data-section {
-    display: none; /* Masquer par défaut */
+    display: none;
     width: 70%;
     margin: 0 auto;
 
@@ -445,11 +445,11 @@ div#button-square button:hover {
 .data-section, .form-section {
     margin: 30px auto;
     padding: 20px;
-    background-color: #07322a;       /* fond sombre */
-    border: 2px solid #00DF82;       /* vert vif */
+    background-color: #07322a;      
+    border: 2px solid #00DF82;   
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 223, 130, 0.2);
-    color: #AACBC4;                   /* texte clair */
+    color: #AACBC4;                  
 }
 
 #main-content-emergency {
@@ -457,7 +457,7 @@ div#button-square button:hover {
 }
 
 .data-section h2, .form-section h2 {
-    color: #00DF82;                   /* titre vert vif */
+    color: #00DF82;                  
     text-align: center;
     margin-bottom: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -479,20 +479,20 @@ div#button-square button:hover {
 
 /* En-tête avec couleur d’accent */
 .data-table thead {
-    background: #2EC297;              /* vert moyen */
-    color: #051c1f;                   /* texte sombre */
+    background: #2EC297;          
+    color: #051c1f;                  
 }
 .data-table thead th {
     padding: 0.75rem 1rem;
     text-align: left;
     font-weight: 600;
     font-size: 0.95rem;
-    border-bottom: 2px solid #00DF82; /* vert vif */
+    border-bottom: 2px solid #00DF82;
 }
 
 /* Corps du tableau : lignes alternées */
 .data-table tbody tr:nth-child(odd) {
-    background: #e6f7f1;              /* très clair vert */
+    background: #e6f7f1;             
 }
 .data-table tbody tr:nth-child(even) {
     background: #ffffff;
@@ -532,7 +532,7 @@ div#button-square button:hover {
 .form-section label {
     display: block;
     margin-bottom: 6px;
-    color: #00DF82;                   /* vert vif */
+    color: #00DF82;                
     font-weight: bold;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
@@ -552,17 +552,17 @@ div#button-square button:hover {
 .form-section input[type="date"] {
     width: 80%;
     padding: 10px;
-    border: 1px solid #2EC297;        /* vert moyen */
+    border: 1px solid #2EC297;      
     border-radius: 6px;
     font-size: 16px;
-    background-color: #0b352e;        /* fond sombre */
-    color: #AACBC4;                   /* texte clair */
+    background-color: #0b352e;       
+    color: #AACBC4;                 
     font-family: 'Open Sans', sans-serif;
     transition: border 0.3s ease;
 }
 
 .form-section input:focus {
-    border-color: #00DF82;            /* vert vif au focus */
+    border-color: #00DF82;          
     outline: none;
     background-color: #0f3f38;
 }
@@ -590,8 +590,8 @@ div#button-square button:hover {
     display: block;
     margin: 30px auto 0;
     padding: 12px 28px;
-    background-color: #00DF82;        /* vert vif */
-    color: #051c1f;                   /* texte sombre */
+    background-color: #00DF82;       
+    color: #051c1f;                 
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -602,7 +602,7 @@ div#button-square button:hover {
 }
 
 .form-section button[type="submit"]:hover {
-    background-color: #2EC297;        /* vert moyen */
+    background-color: #2EC297;       
 }
 
 
