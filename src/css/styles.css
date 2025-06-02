@@ -544,44 +544,30 @@ div#button-square {
 .innovation-cards {
   position: relative;
   width: 100%;
-  max-width: 1200px; /* ou la largeur souhaitée */
-  height: 600px;     /* à ajuster selon la hauteur de vos cartes */
+  max-width: 1200px; 
+  height: 600px;     
   margin: 0 auto;
-}
-
-/* Bloc du haut : deux items alignés aux extrémités */
-#first-block {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  padding: 1rem;
-  box-sizing: border-box;
+  gap: 10%;
+  margin-bottom: 100px;
 }
 
-/* Bloc du bas : un item centré */
-#seccond-block {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  box-sizing: border-box;
-}
-
-/* Dimensions communes des cartes */
 .innovation-item {
-  width: 30%;       /* ajustez selon le rendu désiré */
+    margin: auto;
+}
+
+.innovation-item {
+  width: 30%;       
   max-width: 300px;
-  background: #fff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: var(--color-background1);
+  box-shadow: 0 2px 8px var(--color-acc-green1);
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
+}
+
+#biorecyclage-item {
+    margin-top: 60px;
 }
 
 /* Styles d’image et de texte à l’intérieur */
@@ -592,6 +578,7 @@ div#button-square {
 }
 .innovation-item h3 {
   margin: 0.5rem 0;
+  margin-top: 20px;
   font-size: 1.2rem;
 }
 .innovation-item p {
@@ -602,10 +589,8 @@ div#button-square {
 .innovation-item a {
   display: inline-block;
   margin-bottom: 1rem;
-  color: #0066cc;
   text-decoration: none;
 }
-.innovation-item a:hover {
-  text-decoration: underline;
-}
+
+
 
