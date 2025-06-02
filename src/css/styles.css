@@ -149,10 +149,13 @@ body {
 }
 
 main {
+    margin: auto;
     margin-top: 200px;
+
 }
 
 .main-content {
+    margin: auto;
     padding-top: 80px;
 }
 
@@ -352,12 +355,22 @@ div.main-content {
 
 
 
+section.intro {
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+    margin: auto;
+    text-align: justify;
 
+}
 
 section.founder{
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 65%;
+    text-align: justify;
 }
 
 .founder-text {
@@ -388,29 +401,56 @@ div#button-square {
     padding: auto;
     max-width: 300px;
     max-height: 300px;
-    background-color: aliceblue;
+    gap: 20%;
+}
 
+div#button-square button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: var(--color-background1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+div#button-square button:hover {
+    background-color: #97C6BC;
 }
 
 /***************** Styles communs pour tableaux d'urgence et sections de mise en avant **********************/
+
+
 .selected-button {
-    background-color: #2EC297;
+    background-color: var(--color-acc-green1);
     color: #051c1f;
     border: 1px solid #00DF82;
+    z-index: 5;
+}
+
+.selected-button:hover {
+    background-color: var(--color-acc-green1);
 }
 
 .data-section {
     display: none; /* Masquer par défaut */
+    width: 70%;
+    margin: 0 auto;
+
 }
 
 .data-section, .form-section {
-    margin: 30px 0;
+    margin: 30px auto;
     padding: 20px;
     background-color: #07322a;       /* fond sombre */
     border: 2px solid #00DF82;       /* vert vif */
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 223, 130, 0.2);
     color: #AACBC4;                   /* texte clair */
+}
+
+#main-content-emergency {
+    padding-bottom: 100px;
 }
 
 .data-section h2, .form-section h2 {
@@ -423,6 +463,7 @@ div#button-square {
 /* Style global des tableaux */
 .data-table {
     width: 100%;
+    margin: auto;
     border-collapse: separate;
     border-spacing: 0;
     font-family: 'Open Sans', sans-serif;
@@ -478,6 +519,13 @@ div#button-square {
 }
 
 /****************** Styles pour le formulaire de la newsletter **********************/
+
+#contact-section {
+    width: 65%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
 .form-section label {
     display: block;
     margin-bottom: 6px;
@@ -487,6 +535,11 @@ div#button-square {
     font-family: 'Open Sans', sans-serif;
 }
 
+.form-section {
+    margin: auto;
+    width: 65%;
+}
+
 .form-element {
     margin-bottom: 20px;
 }
@@ -494,7 +547,7 @@ div#button-square {
 .form-section input[type="text"],
 .form-section input[type="email"],
 .form-section input[type="date"] {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     border: 1px solid #2EC297;        /* vert moyen */
     border-radius: 6px;
@@ -514,8 +567,19 @@ div#button-square {
 /* Checkboxes */
 .form-section input[type="checkbox"] {
     margin-right: 10px;
-    transform: scale(1.1);
+    transform: scale(1.3);
     accent-color: #00DF82;
+}
+
+.checkbox-item {
+    margin: 20px 0;
+    display: flex;
+    margin-left: 40px;
+}
+
+.checkbox-item input{
+    
+    color: var(--color-background0);
 }
 
 /* Bouton envoyer */
@@ -550,6 +614,7 @@ div#button-square {
   display: flex;
   gap: 10%;
   margin-bottom: 100px;
+  text-align: justify;
 }
 
 .innovation-item {
@@ -585,6 +650,9 @@ div#button-square {
   padding: 0 0.5rem 1rem;
   font-size: 0.95rem;
   line-height: 1.4;
+  text-align: justify;
+  width: 80%;
+  margin: auto;
 }
 .innovation-item a {
   display: inline-block;
